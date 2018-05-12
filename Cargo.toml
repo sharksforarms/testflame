@@ -9,11 +9,11 @@ members = [
 ]
 
 [dependencies]
-myothercrate = { path = "./myothercrate" }
+myothercrate = {path = "./myothercrate", version = "0.1.0"}
 flame = {version = "0.2.2", optional = true}
 flamer = {version = "^0.2.1", optional = true}
 
 [features]
 default = []
-flame_it = ["flame", "flamer"]
+flame_it = ["flame", "flamer", "myothercrate/flame_it"]
 
